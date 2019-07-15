@@ -11,7 +11,7 @@ class Cat:
         if self.meal_time > 12:
             return f"{self.meal_time - 12} PM"
         elif self.meal_time == 12:
-            return(f"{self.meal_time} PM")
+            return f"{self.meal_time} PM"
         else:
             return f"{self.meal_time} AM"
     
