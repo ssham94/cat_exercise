@@ -8,10 +8,12 @@ class Cat:
         return f"{self.full_name} likes to eat {self.preferred_food} around {self.meal_time}"
 
     def eats_at(self):
-        if self.meal_time <= 11:
-            return f"{self.meal_time} AM"
+        if self.meal_time > 12:
+            return f"{self.meal_time - 12} PM"
+        elif self.meal_time == 12:
+            return(f"{self.meal_time} PM")
         else:
-            return f"{self.meal_time} PM"
+            return f"{self.meal_time} AM"
     
     def meow(self):
         return f"My name is {self.full_name} and I eat {self.preferred_food} at {self.eats_at()}"
